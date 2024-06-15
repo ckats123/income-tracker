@@ -1,20 +1,26 @@
 <template>
-  <h1>Hello, World</h1>
+  <div id="app" class="bg-gray-100 min-h-screen">
+    <!-- Navigation bar or any other layout elements -->
+    
+    <router-view />
+
+    <footer class="bg-gray-200 py-4 text-center">
+      <p>&copy; 2024 Sophia Katsuno</p>
+    </footer>
+  </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'App',
+  // You can add component options here
+};
 </script>
 
-<style>
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Fira Sans', sans-serif;
-}
+<style lang="css">
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body {
-  background: #EEE;
-}
+/* Additional custom styles can be added here */
 </style>
